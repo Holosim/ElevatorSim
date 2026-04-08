@@ -69,4 +69,20 @@ Door timer is measured in ticks (`doorOpenDuration` in `SimConfig`). The FIFO st
 ## Git
 
 GitHub repo: https://github.com/Holosim/ElevatorSim  
-Commit and push after every meaningful change.
+Remote: `origin` → `https://github.com/Holosim/ElevatorSim.git`, branch `master`.
+
+**After every meaningful unit of work, commit and push.** This includes completing a feature, fixing a bug, refactoring, or any change that leaves the code in a coherent state. Never batch up multiple unrelated changes into one commit.
+
+Commit message format:
+- Subject line: short imperative summary (e.g. `Wire floorsPerTick into Elevator constructor`)
+- Body (when needed): explain *what* changed and *why*, not just *how*
+
+```
+git add <specific files>
+git commit -m "Subject line
+
+Optional body explaining motivation or context."
+git push
+```
+
+This ensures there is always a recoverable snapshot on GitHub and makes it easy to revert any change.
